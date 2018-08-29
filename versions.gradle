@@ -1,0 +1,84 @@
+ext.deps = [:]
+
+def versions = [:]
+versions.tools_gradle = "3.1.2"
+versions.tinker_support = "1.1.2"
+versions.appcompat = "27.1.1"
+versions.junit = "4.12"
+versions.runner = "1.0.2"
+versions.espresso = "3.0.2"
+versions.retrofit2 = "2.3.0"
+versions.adapter_rxjava2 = "2.3.0"
+versions.converter_scalars = "+"
+versions.converter_gson = "2.3.0"
+versions.okhttp3 = "3.9.0"
+versions.logging_interceptor = "3.9.0"
+versions.rxandroid = "2.0.1"
+versions.rxjava = "2.1.0"
+versions.converter_fastjson = "2.1.0"
+versions.butterknife = "8.8.1"
+versions.butterknife_compiler = "8.8.1"
+versions.design = "27.1.1"
+versions.swipebackhelper = "3.1.2"
+
+
+def deps = [:]//声明
+def support = [:]
+support.appcompat="com.android.support:appcompat-v7:$versions.appcompat"
+support.junit="junit:junit:$versions.junit"
+support.runner="com.android.support.test:runner:$versions.runner"
+support.espresso="com.android.support.test.espresso:espresso-core:$versions.espresso"
+deps.support=support
+
+def retrofit = [:]//Retrofit与RxAndroid配置依赖
+retrofit.retrofit2="com.squareup.retrofit2:retrofit:$versions.retrofit2"
+
+retrofit.adapter_rxjava2="com.squareup.retrofit2:adapter-rxjava2:$versions.adapter_rxjava2"
+
+retrofit.converter_scalars="com.squareup.retrofit2:converter-scalars:$versions.converter_scalars"
+
+retrofit.converter_gson="com.squareup.retrofit2:converter-gson:$versions.converter_gson"
+
+retrofit.okhttp3="com.squareup.okhttp3:okhttp:$versions.okhttp3"
+
+retrofit.logging_interceptor="com.squareup.okhttp3:logging-interceptor:$versions.logging_interceptor"
+
+retrofit.rxandroid="io.reactivex.rxjava2:rxandroid:$versions.rxandroid"
+
+retrofit.rxjava="io.reactivex.rxjava2:rxjava:$versions.rxjava"
+
+
+deps.retrofit=retrofit
+
+
+deps.tools_gradle = "com.android.tools.build:gradle:$versions.tools_gradle" // gradle 插件
+
+deps.tinker_support = "com.tencent.bugly:tinker-support:$versions.tinker_support"//热更新
+
+deps.converter_fastjson="org.ligboy.retrofit2:converter-fastjson-android:$versions.converter_fastjson"//JSON.toJSONBytes() 集合转json的JSON jar包
+
+deps.butterknife="com.jakewharton:butterknife:$versions.butterknife"//butterknife 初始化控件
+
+deps.butterknife_compiler="com.jakewharton:butterknife-compiler:$versions.butterknife_compiler"//butterknife 初始化控件
+
+deps.design="com.android.support:design:$versions.design" //  tabLayout
+
+deps.swipebackhelper="com.jude:swipebackhelper:$versions.swipebackhelper"  //右滑关闭Activity
+
+ext.deps = deps //赋值
+
+def build_versions = [:]
+build_versions.min_sdk = 19
+build_versions.target_sdk = 27
+build_versions.build_tools="27.0.3"
+build_versions.version_code = 3
+build_versions.version_name = "1.0.2"
+ext.build_versions = build_versions
+
+
+def addRepos(RepositoryHandler handler) {
+    handler.google()
+    handler.jcenter()
+}
+
+ext.addRepos = this.&addRepos

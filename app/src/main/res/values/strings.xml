@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ProjectFramework</string>
+    <string name="ahbotton_one">首页</string>
+    <string name="ahbotton_two">商城</string>
+    <string name="ahbotton_three">体检</string>
+
+    <!--透明渐变的TabView 主页的底部导航-->
+    <declare-styleable name="AlphaTabView">
+        <attr name="tabIconNormal" format="reference" />
+        <attr name="tabIconSelected" format="reference" />
+        <attr name="tabText" format="string" />
+        <attr name="tabTextSize" format="dimension" />
+        <attr name="textColorNormal" format="color" />
+        <attr name="textColorSelected" format="color" />
+        <attr name="badgeBackgroundColor" format="color" />
+    </declare-styleable>
+</resources>

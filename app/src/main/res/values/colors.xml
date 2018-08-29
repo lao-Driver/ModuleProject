@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+<!--主页导航-->
+    <color name="color_666666">#666666</color>
+    <color name="themeGreen">#7AB8B2</color>
+    <color name="color_7D7D7D">#7D7D7D</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="red">#f70f07</color>
+    <color name="F9551E">#F9551E</color>
+    <color name="F008f0FF">#0080FF</color>
+</resources>

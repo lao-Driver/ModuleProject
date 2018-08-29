@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.fourpagelibrary" >
+ <application>
+<activity android:name="com.example.administrator.fourpagelibrary.MainActivity"></activity>
+</application>
+
+</manifest>

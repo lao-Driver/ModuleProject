@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">commonlibrary</string>
+
+    <!--透明渐变的TabView 主页的底部导航-->
+    <declare-styleable name="AlphaTabView">
+        <attr name="tabIconNormal" format="reference" />
+        <attr name="tabIconSelected" format="reference" />
+        <attr name="tabText" format="string" />
+        <attr name="tabTextSize" format="dimension" />
+        <attr name="textColorNormal" format="color" />
+        <attr name="textColorSelected" format="color" />
+        <attr name="badgeBackgroundColor" format="color" />
+    </declare-styleable>
+</resources>

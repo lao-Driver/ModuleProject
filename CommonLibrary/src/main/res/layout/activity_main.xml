@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    tools:context=".welcomepage.MainActivity">
+
+  <FrameLayout
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+      android:layout_weight="1"
+       />
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/y2"
+       android:background="#f89"
+       />
+    <com.example.administrator.commonlibrary.definedview.buttomtabs.AlphaTabsIndicator
+        android:id="@+id/alphaIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.example.administrator.commonlibrary.definedview.buttomtabs.AlphaTabView
+            android:id="@+id/one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tabIconNormal="@mipmap/home_health_nor"
+            app:tabIconSelected="@mipmap/home_health_xuan"
+            app:tabText="体检"
+            app:textColorNormal="@color/color_666666"
+            app:textColorSelected="@color/themeGreen"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            app:tabTextSize="12dp"
+            />
+
+
+        <com.example.administrator.commonlibrary.definedview.buttomtabs.AlphaTabView
+            android:id="@+id/two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            app:tabTextSize="10dp"
+            app:tabText="发现"
+            app:textColorNormal="@color/color_666666"
+            app:textColorSelected="@color/themeGreen"
+            app:tabIconNormal="@mipmap/home_shop2_nor"
+            app:tabIconSelected="@mipmap/home_shop2_xuan"
+            />
+        <com.example.administrator.commonlibrary.definedview.buttomtabs.AlphaTabView
+            android:id="@+id/three"
+            android:layout_width="0dp"
+            android:layout_height="300px"
+            android:layout_weight="1"
+            app:tabTextSize="12dp"
+            app:textColorNormal="@color/color_666666"
+            app:textColorSelected="@color/themeGreen"
+            app:tabIconNormal="@mipmap/kauisutijian_btn"
+            app:tabIconSelected="@mipmap/kauisutijian_btn"
+            />
+        <com.example.administrator.commonlibrary.definedview.buttomtabs.AlphaTabView
+            android:id="@+id/four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+             android:layout_weight="1"
+            app:tabTextSize="12dp"
+            app:tabText="资讯"
+            app:textColorNormal="@color/color_666666"
+            app:textColorSelected="@color/themeGreen"
+            app:tabIconNormal="@mipmap/home_tijian1_nor"
+            app:tabIconSelected="@mipmap/home_tijian1_wei"
+            />
+
+        <com.example.administrator.commonlibrary.definedview.buttomtabs.AlphaTabView
+            android:id="@+id/five"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            app:tabText="我的"
+            app:textColorNormal="@color/color_666666"
+            app:textColorSelected="@color/themeGreen"
+            app:tabTextSize="12dp"
+            app:tabIconNormal="@mipmap/home_me4_nor"
+            app:tabIconSelected="@mipmap/home_me4_xuan"
+            />
+
+    </com.example.administrator.commonlibrary.definedview.buttomtabs.AlphaTabsIndicator>
+
+</LinearLayout>

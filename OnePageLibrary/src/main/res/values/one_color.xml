@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="white" tools:ignore="ResourceName">#FFFFFF</color>
+    <color name="red" tools:ignore="ResourceName">#f70f07</color>
+    <color name="F9551E" tools:ignore="ResourceName">#F9551E</color>
+    <color name="F008f0FF" tools:ignore="ResourceName">#0080FF</color>
+</resources>
